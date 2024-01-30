@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .completeproject {
+        background-color: black;
+      }
+      .name {
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+      }
+      .name2 {
+        font-size: 20px;
+        color: white;
+      }
+      .name4 {
+        font-size: 20px;
+        color: white;
+      }
+      .logo {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+      }
+      .name1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+      }
+      .name3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+      }
+      .DSS {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        padding:  10px 40px;
+        border: 1px black solid;
+        background-color: rgba(0, 0, 0, 0.477);
+        position: fixed;
+      }
+
+      .picture {
+        font-size: 60px;
+        font-weight: bold;
+        padding: 10px;
+        color: white;
+      }
+      .DSS2024 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 80px;
+      }
+
+      .snap {
+        border-radius: 80px;
+      }
+      .snap1 {
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+      }
+      .snapshots {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 70px;
+      }
+            .naming {
+        font-size: 50px;
+        text-align: start;
+        padding: 30px 100px;
+        color: white;
+      }
+      .leader1 {
+        font-size: 20px;
+        color: darkgrey;
+      }
+      .leader2 {
+        font-size: 50px;
+        color: white;
+      }
+      .position {
+        border: 2px black solid;
+        font-size: 40px;
+        background-color: darkslategrey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 70px;
+        color: white;
+      }
+      .leadership {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        gap: 150px;
+        padding: 150px;
+      }
+      .education1 {
+        font-size: 20px;
+        border: 1px white solid;
+        border-radius: 50px;
+        padding: 10px;
+        color: white;
+      }
+      .education2 {
+        font-size: 30px;
+        font-weight: bold;
+        color:white;
+        padding: 10px;
+      }
+      .education10 {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 300px;
+        border: 2px black solid;
+        background-image: linear-gradient(
+            rgba(38, 34, 34, 0.048), black  ),
+          url("https://www.tcs.com/content/dam/global-tcs/en/images/home/insights-by-interest/collegiate-collaborations-climate.png/jcr:content/renditions/cq5dam.thumbnail.1280.765.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+      }
+      .education20 {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 300px;
+        border: 2px black solid;
+        background-image: linear-gradient(
+            rgba(255, 255, 255, 0),
+        black
+          ),
+          url("https://www.tcs.com/content/dam/global-tcs/en/images/home/insights-by-interest/businesses-balance-green-goals.png/jcr:content/renditions/cq5dam.thumbnail.1280.765.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+      }
+      .education30 {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 300px;
+        border: 2px black solid;
+        background-image: linear-gradient(
+            rgba(255, 255, 255, 0),
+    black
+          ),
+          url("https://www.tcs.com/content/dam/global-tcs/en/images/home/insights-by-interest/path-planet-people-prosperity.png/jcr:content/renditions/cq5dam.thumbnail.1280.765.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+      }
+      .sustainbility {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        padding: 30px;
+      }
+      .sustainbility1 {
+        font-size: 50px;
+        padding: 0px 40px;
+        color: white;
+      }
+      .discover {
+        font-size: 50px;
+        color: white;
+        padding: 0px 40px;
+      }
+      .discover2 {
+        font-size: 40px;
+        color: white;
+      }
+      .discover3 {
+        font-size: 30px;
+        color: white;
+        border: 2px white solid;
+        padding: 5px;
+        border-radius: 50px;
+      }
+      .discover1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 50px;
+        border: 2px white solid;
+        background-image: linear-gradient(#21252941, rgba(26, 18, 18, 0.534)),
+          url("https://s7ap1.scene7.com/is/image/TCSCOMprod/munch-museum?wid=1216&hei=680&dpr=off");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 30px;
+        padding: 200px;
+      }
+      .discover10 {
+        font-size: 20px;
+        color: white;
+      }
+      .discover20 {
+        font-size: 20px;
+        color: white;
+      }
+      .adjust {
+        border: 1px white solid;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        gap: 30px;
+        padding: 20px;
+        background-color: black;
+      }
+      .totaladjust {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        gap: 40px;
+        position: absolute;
+        bottom: 50px;
+        right: 130px;
+      }
+      .complete {
+        position: relative;
+        padding: 60px;
+      }
+      .knowledge1 {
+        font-size: 18px;
+        color: darkslategray;
+      }
+      .knowledge2 {
+        font-size: 40px;
+        color: orangered;
+      }
+      .knowledge3 {
+        font-size: 20px;
+        color: darkslategrey;
+      }
+      .knowledge4 {
+        font-size: 20px;
+      }
+
+      .knowledge {
+        border: 2px white solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        text-align: start;
+        gap: 40px;
+        position: absolute;
+        left: 700px;
+        bottom: 60px;
+        background-color: white;
+        padding: 20px;
+      }
+      .knowledgeimage {
+        position: relative;
+      }
+      .know {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+      }
+      .action1{
+        font-size: 35px;
+        padding-top: 350px;
+        color:white;
+      }
+      .action2{
+        font-size: 22px;
+        color: white;
+      }
+      .belief2 {
+        border: 2px grey solid;
+        height:500px;
+        width:400px;
+        background-image: linear-gradient(
+            rgba(255, 255, 255, 0),
+            rgba(18, 17, 17, 0.808)
+          ),
+          url("https://s7ap1.scene7.com/is/image/TCSCOMprod/nwc-erp-platform-transformation-supply-card-1?wid=665&hei=635&dpr=off");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+      }
+      .belief3 {
+        border: 2px grey solid;
+        height:500px;
+        width:400px;
+        background-image: linear-gradient(
+            rgba(255, 255, 255, 0),
+            rgba(18, 17, 17, 0.808)
+          ),
+          url("https://s7ap1.scene7.com/is/image/TCSCOMprod/ai-hero-2:Small?wid=719&hei=851&dpr=off");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+      }
+      .belief4 {
+        border: 2px grey solid;
+        height:500px;
+        width:400px;
+        background-image: linear-gradient(
+            rgba(255, 255, 255, 0),
+            rgba(18, 17, 17, 0.808)
+          ),
+          url("https://s7ap1.scene7.com/is/image/TCSCOMprod/kautex-accelerates-digitalization-sustainable-mobility-card?wid=665&hei=635&dpr=off");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 10px;
+      }
+     .belief1{
+        display:flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     gap:50px;
+    }
+    .action{
+        font-size: 40px;
+        padding: 50px 70px;
+    }
+    .lastimage1{
+        border: 2px white solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        text-align: start;
+        background-color: white;
+        position: absolute;
+      gap:50px;
+        bottom: 140px;
+        padding: 30px;
+      }
+      .lastimage{
+        position: relative;
+        padding:80px;
+      }
+      .pick1{
+        padding-left: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="completeproject">
+      <div class="DSS">
+        <div class="logo">
+          <div>
+            <img
+              src="data:image/png;base64,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"
+              alt="logo"
+              height="60px"
+              width="60px"
+            />
+          </div>
+          <div class="name">DEMY <br />SOFTWARE <br />SOLUTIONS</div>
+        </div>
+        <div class="name1">
+          <div class="name2">What we do</div>
+          <div class="name2">Who we are</div>
+          <div class="name2">Insights</div>
+          <div class="name2">Careers</div>
+          <div class="name2">New and now</div>
+          <div class="name2">Investors</div>
+        </div>
+        <div class="name3">
+          <div class="name4">CONTACT US</div>
+          <div class="name4">DSS WORLDWIDE</div>
+          <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfD0UBV2AH_G1SlUZdkR_0hCv4V7q0u3QYQA&usqp=CAU"
+              alt="search"
+              height="30px"
+              width="30px"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="DSS2024">
+        <div class="picture">Building on Ambition and Optimism</div>
+        <div>
+          <img
+            picture1
+            src="https://s7ap1.scene7.com/is/image/TCSCOMprod/building-ambition-optimism:Large?wid=1134&hei=691&dpr=off"
+            alt="image"
+            height="700px"
+            width="1300px"
+          />
+        </div>
+       
+      </div>
+
+      <div>
+        <div class="naming">Snapshots</div>
+        <div class="snapshots">
+
+          <div class="snapshot1">
+            <img
+              class="snap"
+              src="https://cdn.storifyme.com/accounts/tcs/assets/240x/f-data_cover_long-101151704704885757.png?t=1704767541000"
+              alt="snap"
+              height="120px"
+              width="120px"
+            />
+          <div class="snap1">Itelligent<br />Insurance</div>
+          </div>
+                 <div class="snapshot1">
+            <img
+              class="snap"
+              src="https://cdn.storifyme.com/accounts/tcs/assets/240x/f-ai-_cover_long-29881704706450260.png?t=1704782533000"
+              alt="snap"
+              height="120px"
+              width="120px"
+            />
+          <div class="snap1">Connected<br />numbers</div>
+          </div>
+          <div class="snapshot1">
+            <img
+              class="snap"
+              src="https://cdn.storifyme.com/accounts/tcs/assets/240x/f-cloud_cover_long-28291704707156326.png?t=1704782926000"
+              alt="snap"
+              height="120px"
+              width="120px"
+            />
+          <div class="snap1">La La LLM</div>
+          </div>
+          <div class="snapshot1">
+            <img
+              class="snap"
+              src="https://cdn.storifyme.com/accounts/tcs/assets/240x/f-running_cover_long-18491704707363210.png?t=1704767393000"
+              alt="snap"
+              height="120px"
+              width="120px"
+            />   
+          <div class="snap1">
+            26.2 miles of<br />
+            building on<br />
+            belief
+          </div>
+          </div>
+          <div class="snapshot1">
+            <img
+              class="snap"
+              src="https://cdn.storifyme.com/accounts/tcs/assets/240x/f-meta_cover_long-21201704707595061.png?t=1704781789000"
+              alt="snap"
+              height="120px"
+              width="120px"
+            />
+          <div class="snap1">Don't make it <br />meta worse</div>
+          </div>
+          <div class="snapshot1">
+            <img
+              class="snap"
+              src="https://cdn.storifyme.com/accounts/tcs/assets/240x/f-virtual-worlds-portrait-53891676546855467.png?t=1684164815000"
+              alt="snap"
+              height="120px"
+              width="120px"
+            />
+        <div class="snap1">
+          virtual worlds,<br />real privacy<br />concerns
+        </div>
+        </div>
+      </div>
+</div>
+
+
+
+
+      <div class="leadership">
+        <div class="leader">
+          <div class="leader1">GLOBAL THOUGHT LEADERSHIP STUDY</div>
+          <div class="leader2">
+            Answer a few questions <br />to unlock insights into<br />
+            innovation with cloud
+          </div>
+        </div>
+        <div class="position">
+          Are You Leveraging <br />Your Competitive <br />advantage With Cloud
+        </div>
+      </div>
+
+      <div class="sustainbility1">Spolight on Sustainbility</div>
+      <div class="sustainbility">
+        <div class="education10">
+          <div class="education1">Education</div>
+          <div class="education2">Collegiate collaborations for climate</div>
+        </div>
+        <div class="education20">
+          <div class="education1">Enterprise</div>
+          <div class="education2">Bussinesses balance green goals</div>
+        </div>
+        <div class="education30">
+          <div class="education1">DSS way</div>
+          <div class="education2">Path to planet,people,prosperity</div>
+        </div>
+      </div>
+
+      <div class="complete">
+        <div class="discover">Discover the DSS difference</div>
+        <div class="discover1">
+          <div class="discover2">
+            AI-powered immersive art<br />
+            experiences at the Munch<br />
+            Museum
+          </div>
+          <div class="discover3">Learn More</div>
+        </div>
+        <div class="totaladjust">
+          <div class="adjust">
+            <div class="discover10">ART & AI</div>
+            <div class="discover20">
+              A DSS partnership for<br />
+              interactive and<br />
+              inclusive art
+            </div>
+          </div>
+          <div class="adjust">
+            <div class="discover10">DSS PACE</div>
+            <div class="discover20">
+              Operationalize the<br />
+              disruptive potential of<br />
+              Gen AI
+            </div>
+          </div>
+          <div class="adjust">
+            <div class="discover10">DSS + AWS</div>
+            <div class="discover20">
+              Responsible<br />frame works and<br />pace port innovation<br />hubs
+            </div>
+          </div>
+          <div class="adjust">
+            <div class="discover10">HEALTHCARE & AI</div>
+            <div class="discover20">
+              Data-backed<br />initiatives for<br />improved health<br />outcomes
+            </div>
+          </div>
+          <div class="adjust">
+            <div class="discover10">Q3 FY24 RESULTS</div>
+            <div class="discover20">
+              Highlights from<br />
+              consolidated financial<br />
+              results
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="knowledgeimage">
+      <div>
+        <img
+          class="pick"
+          src="https://s7ap1.scene7.com/is/image/TCSCOMprod/who-we-are-story-home?wid=1400&hei=1029&dpr=off"
+          alt="image"
+          height="550px"
+          width="1100px"
+        />
+      </div>
+      <div class="knowledge">
+        <div class="knowledge1">WHO WE ARE</div>
+        <div class="knowledge2">
+          We build greater futures through <br />innovation and collective<br />
+          knowledge.
+        </div>
+        <div class="knowledge3">
+          TCS is an IT services, consulting and business solutions
+          organization<br />
+          that has been partnering with many of the world’s largest businesses
+          in<br />
+          their transformation journeys for over 50 years.
+        </div>
+        <div class="know">
+          <div class="knowledge4">Get to know us</div>
+          <div>
+            <img
+              src="data:image/png;base64,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"
+              alt="image"
+              height="40px"
+              width="40px"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="belief">
+      <div class="action">Belief in action</div>
+    </div>
+    <div class="belief1">
+    <div class="belief2">
+        <div class="action1">A new,Nimble NWC</div>
+        <div class="action2">
+          Saudi-Aribia's national water company<br>consolidates and transforms<br />comprehensively
+        </div>
+      </div> 
+      <div class="belief3"> 
+      <div class="action1">Gaining Momentum <br />With AI</div>
+      <div class="action2">
+        South-African insuranceMomentum<br />Metropolitan delivers chatbox
+        service<br />automation and better CX
+      </div>
+    </div>
+    <div class="belief4">
+      <div class="action1">Kautex Kickstarts <br />automation</div>
+      <div class="action2">
+        German automotive supplier develops<br />end-to-end-software capability
+      </div>
+    </div>
+    </div>
+
+<div class="lastimage">
+      <div class="lastimage1">
+      <div class="knowledge1">WHO WE DO</div>
+      <div class="knowledge2">
+      DSS transforms bussinesses through <br />technology
+      </div>
+      <div class="knowledge3">
+        We help businesses successfully navigate digital transformation and <br />
+        drive real growth, drawing on the combined power of experience and <br />
+        contextual knowledge, across a vast ecosystem of expertise.
+      </div>
+      <div class="know">
+        <div class="knowledge4">Get to know us</div>
+        <div>
+          <img
+            src="data:image/png;base64,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"
+            alt="image"
+            height="40px"
+            width="40px"
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      <img
+        class="pick1"
+        src="https://s7ap1.scene7.com/is/image/TCSCOMprod/what-we-do-story-home?wid=1400&hei=1029&dpr=off"
+        alt="image"
+        height="550px"
+        width="1100px"
+      />
+    </div>
+    </div>
+   </body>
+</html>
